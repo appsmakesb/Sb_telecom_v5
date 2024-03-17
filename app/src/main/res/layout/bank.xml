@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7edf2"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/chat_bubble"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Topup"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapeemail"
+                    android:drawableStart="@drawable/ic_baseline_account_bank_24"
+                    android:drawablePadding="10dp"
+                    android:hint="AC Number"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textColor="#161515"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/branch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shapeemail"
+                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/mobile"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textColor="#161515"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shapeemail"
+                    android:drawableLeft="@drawable/ic_baseline_people_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="#161515"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shapeemail"
+                    android:drawableLeft="@drawable/ic_taka__bengali_letter_"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/amount"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textColor="#161515"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dummy"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/ic_baseline_account_bank_24" />
+
+                    <Spinner
+                        android:id="@+id/flot"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dummy"
+                        android:drawableLeft="@drawable/ic_baseline_account_bank_24"
+                        android:padding="1dp"
+                        android:paddingLeft="8dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shapeemail"
+                    android:gravity="top|left"
+                    android:hint="@string/desc"
+                    android:inputType="textMultiLine"
+                    android:minHeight="150dp"
+                    android:padding="5dp"
+                    android:textColor="#161515"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shapeemail"
+                    android:drawableLeft="@drawable/ic_baseline_key_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/enter_pin_code"
+                    android:inputType="numberPassword"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000" />
+
+                <Button
+                    android:id="@+id/sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:onClick="action"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/confirm"
+                    android:textColor="@color/primary"
+                    android:tint="#03a9f4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

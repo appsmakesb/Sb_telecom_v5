@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/live"
+            android:icon="@drawable/ic_baseline_multiple_stop_24"
+            android:title="@string/live_rc" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/account_circle_24"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/history" />
+        <item
+            android:id="@+id/myshop"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/shop_h" />
+        <item
+            android:id="@+id/membership"
+            android:icon="@drawable/ic_baseline_face_2_24"
+            android:title="@string/membership"
+            android:visible="false"/>
+        <item
+            android:id="@+id/notic"
+            android:icon="@drawable/ic_baseline_circle_notifications_24"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/device"
+            android:icon="@drawable/ic_baseline_device_unknown_24"
+            android:title="@string/my_device"
+            android:visible="false"/>
+        <item
+            android:id="@+id/device_lock"
+            android:icon="@drawable/ic_baseline_phonelink_lock_24"
+            android:title="@string/device_lock" />
+        <item
+            android:id="@+id/twostep"
+            android:icon="@drawable/ic_baseline_send_to_mobile_24"
+            android:title="@string/two_step" />
+        <item
+            android:id="@+id/api"
+            android:icon="@drawable/ic_baseline_internet_24"
+            android:title="@string/api_key"
+            android:visible="false"/>
+        <item
+            android:id="@+id/changepin"
+            android:icon="@drawable/ic_baseline_key_24"
+            android:title="@string/c_pin" />
+        <item
+            android:id="@+id/changepassword"
+            android:icon="@drawable/ic_baseline_lock_24"
+            android:title="@string/c_pass" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="@string/logout" />
+    </group>
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/lang"
+                android:icon="@drawable/ic_baseline_language_24"
+                android:title="@string/lang"
+                android:visible="false"/>
+            <item
+                android:id="@+id/reffer"
+                android:icon="@drawable/ic_baseline_people_24"
+                android:title="@string/refer"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/complain"
+                android:icon="@drawable/ic_baseline_face_2_24"
+                android:title="@string/compain" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/ic_baseline_local_phone_24"
+                android:title="@string/helpline" />
+            <item
+                android:id="@+id/policy"
+                android:icon="@drawable/ic_baseline_check_circle_outline_24"
+                android:title="@string/policy" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.isseiaoki.simplecropview.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        app:scv_background_color="#fff"
+        app:scv_frame_color="@color/Crimson"
+        app:scv_frame_stroke_weight="1dp"
+        app:scv_guide_color="@color/Aqua"
+        app:scv_guide_stroke_weight="1dp"
+        app:scv_handle_color="@color/Chartreuse"
+        app:scv_handle_size="14dp"
+        app:scv_min_frame_size="50dp"
+        app:scv_overlay_color="@drawable/bg_row"
+        app:scv_touch_padding="8dp" />
+
+    <Button
+        android:id="@+id/save"
+        style="@style/loginButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="Save" />
+
+</RelativeLayout>

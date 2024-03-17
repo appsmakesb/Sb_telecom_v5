@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customAlertDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dilalog_raw"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/working"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="An error occurred"
+                android:textAlignment="center"
+                android:textColor="#fa1b1b" />
+
+            <TextView
+                android:id="@+id/dialogOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/working"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="This dialog opens with reveal effect"
+                android:textAlignment="center"
+                android:textColor="#2196f3"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/SuccessImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialogOpen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/ic_round_error_24" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<!-- bottom_rounded_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#048BFF" />
+    <corners android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"
+        android:bottomLeftRadius="16dp"
+    android:bottomRightRadius="16dp" />
+</shape>

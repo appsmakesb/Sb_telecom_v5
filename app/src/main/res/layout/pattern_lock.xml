@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/loginbg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Draw your pattern"
+            android:textColor="#03a9f4"
+            android:textSize="25dp" />
+
+        <com.reginald.patternlockview.PatternLockView
+            android:id="@+id/lock_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:lock_autoLink="false"
+            app:lock_enableVibrate="true"
+            app:lock_lineColor="#03a9f4"
+            app:lock_lineWidth="5dp"
+            app:lock_nodeCorrectSrc="@drawable/pattern_lock_dot_node_correct"
+            app:lock_nodeErrorSrc="@drawable/pattern_lock_dot_node_error"
+            app:lock_nodeHighlightSrc="@drawable/pattern_lock_dot_node_highlighted"
+            app:lock_nodeOnAnim="@anim/pattern_lock_node_anim_larger"
+            app:lock_nodeSize="10dp"
+            app:lock_nodeSrc="@drawable/pattern_lock_dot_node_normal"
+            app:lock_nodeTouchExpand="15dp"
+            app:lock_padding="20dp"
+            app:lock_size="3"
+            app:lock_spacing="90dp"
+            app:lock_vibrateTime="100" />
+
+        <Button
+            android:id="@+id/sub"
+            style="@style/loginButton"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:text="Confirm &gt;&gt;"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

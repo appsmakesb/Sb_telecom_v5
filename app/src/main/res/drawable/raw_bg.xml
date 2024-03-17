@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!--<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <solid android:color="#3196DE" />
+    <corners android:radius="@dimen/account_status_width" />
+    <stroke
+        android:width="1dp"
+        android:color="#d6dfea" />
+</shape>-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--<gradient
+        android:angle="90"
+        android:centerColor="#85C672"
+        android:endColor="#74BF7C"
+        android:radius="@dimen/account_status_width"
+        android:startColor="#A2D167"
+        android:type="linear" />
+    <corners android:radius="@dimen/account_status_width" />-->
+
+    <gradient
+        android:angle="90"
+        android:centerColor="#FFFFFF"
+        android:endColor="#FFFFFF"
+        android:radius="@dimen/account_status_width"
+        android:startColor="#FFFFFF"
+        android:type="linear" />
+    <corners android:radius="@dimen/account_status_width" />
+
+    <stroke
+        android:width="1dp"
+        android:color="#d6dfea" />
+
+    <!--<gradient
+        android:startColor="#4A2C4C"
+        android:centerColor="#742E60"
+        android:endColor="#8E2A5C"
+        android:angle="0"
+        android:type="linear" />-->
+
+    <corners android:radius="@dimen/account_status_width" />
+
+</shape>
